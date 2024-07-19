@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Licencias</title>
+</head>
+<body>
+  <h1>Analisis de licencias de conducir</h1>
+  
+  <script>
+    // Pedimos edad en licencia
+    let traeLicencia = prompt("Su lizencia por favor")
+
+    // Bloque Principal
+    if ( traeLicencia.toLowerCase() == 'si'  ) {
+      document.write("Seguimos analizando")
+
+      let edadLicencia = prompt("Digame su edad")
+
+      // If-Else anidado
+      if (edadLicencia >= 18 ) {
+        document.write("Todo bien sr/a, continue")
+      } else {
+        document.write("Licencia del acompañante por favor")
+      }
+    } else {
+      document.write("Acompañeme sr")
+    }
+  </script>
+</body>
+</html>

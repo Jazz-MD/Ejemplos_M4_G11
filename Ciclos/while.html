@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>While</title>
+</head>
+<body>
+  <h1>Ciclo While</h1>
+
+  <script>
+    // Pasar lista hasta que se acaben los alumnos
+    const cantidadAlumnos = Number(prompt("¿Cuantos alumnos están en la lista?"));
+
+    let iteradorLista = 0;
+    let contadorPresentes = 0;
+    
+    /*--------------------------------*/
+    while ( iteradorLista <= cantidadAlumnos )
+    {
+      document.write(`<p> Estamos llamando al estudiante ${iteradorLista} </p>`)
+      let estaPresente = prompt("Asistencia");
+      if (estaPresente) {
+        contadorPresentes++
+      }
+
+      iteradorLista++
+    }
+    /*----------------------------------*/
+
+    document.write("<p>Lista Terminada</p>")
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclo</title>
+</head>
+<body>
+  <h1>Ciclo for</h1>
+
+  <script src="script.js">
+    // preguntamos al usuario cuántas líneas escribimos
+  let cantLineas = Number(prompt("Ingresa la cantidad de líneas a escribir"));
+
+  // Creamos ciclo para escribir líneas
+  for( let lineaActual = 1; lineaActual <= cantLineas; lineaActual++ )
+  {
+    document.write(`<p> Linea ${lineaActual} de ${cantLineas} total/es </p>`);
+  }
+  </script>
+</body>
+</html>
