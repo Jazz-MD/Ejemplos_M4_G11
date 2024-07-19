@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estudiamos?</title>
+</head>
+<body>
+  <h1>¿Quieres estudiar JS?</h1>
+
+  <script>
+    // Preguntamos al usuario
+    let respuesta = prompt("¿Quieres usted aprender a programar en JavaScript?: Si o No")
+
+    if ( respuesta.toLowerCase() == 'si') {
+      // Caso si
+      document.write("Bienvenido al butcamp! ")
+    } else if ( respuesta.toLowerCase() == 'no') {
+      // Caso no
+      document.write("Entendemos, te esperamos cuando cambies de opinion")
+    } else {
+      // otro caso no contemplado
+      document.write("No entiendo su respuesta")
+    }
+
+    console.log("El usuario respondió" + respuesta)
+  </script>
+</body>
+</html>

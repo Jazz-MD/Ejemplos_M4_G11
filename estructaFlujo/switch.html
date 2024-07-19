@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Switch case</title>
+</head>
+<body>
+  
+
+  <script>
+    // Crear Leer Actualizar Borrar
+    let opcion = prompt("¿Qué acción desea realizar con el usuario?\nCrear Leer Actualizar Borrar")
+
+    switch (opcion.toLowerCase()) {
+      // Todos los posibles casos
+
+      case "actualizar":
+        alert("Ingresa los datos para actualizar");
+        /* resto del código */
+        break; // indicar fin de instrucciones para el caso actualizar
+      case "leer":
+        alert("Qué datos necesitas leer");
+        break;
+      case "crear":
+        alert("Ingresa tus datos");
+        break;
+      case "borrar":
+        alert("Se borró usuario");
+        break;
+      
+      // caso por defecto
+      default:
+        alert("No es una opción válida")
+        break;
+    }
+  </script>
+</body>
+</html>
