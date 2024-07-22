@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Factorial</title>
+</head>
+<body>
+  
+  <script>
+    // Definir
+    const factorial = function(n) {
+      let factorialNum = 1;
+      // definimos ciclo
+      for(let i = 1; i <= n; i++) {
+        factorialNum = i * factorialNum;
+        console.log(factorialNum)
+      }
+
+      return factorialNum;
+    }
+
+    const listadoFactoriales = function(n) {
+      let pantalla = ''
+      for (let i = 1; i <= n; i++) {
+        pantalla += `<br>factorial de ${i} es: ${factorial(i)}`
+      }
+
+      return pantalla
+    }
+
+    document.write(listadoFactoriales(6))
+  </script>
+</body>
+</html>
