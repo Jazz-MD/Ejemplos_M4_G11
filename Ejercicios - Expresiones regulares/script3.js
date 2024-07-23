@@ -20,20 +20,23 @@ function validacionDatos(nombre, telefono, email) {
   const regNom = /[a-z]+/i
   const regTel = /\d+/   // \d digitos + uno o mas
   const regCorreo = /^([a-z])([a-z]|[0-9])+(@)([a-z]){3,}.((com)|(cl))/i
+  const nombreValido = regNom.test(nombre)
+  const telefonoValido = regTel.test(telefono)
+  const emailValido = regCorreo.test(email)
 
-  if (!regCorreo.test(email)) {
+
+  if (!nombreValido) {
+    document.querySelector(".errorNombre").innerText = 'Nombre Inválido'
+  }
+  if (!telefonoValido) {
+    document.querySelector(".errorTelefono").innerText = 'Teléfono inválido'
+  }
+  if (!emailValido) {
     document.querySelector(".errorEmail").innerText = 'Correo Inválido'
   }
 
-  if (!regNom.test(nombre)) {
-    document.querySelector(".errorNombre").innerText = 'Nombre Inválido'
-  }
 
-  if (!regTel.test(telefono)) {
-    document.querySelector(".errorTelefono").innerText = 'Teléfono inválido'
-  }
-
-  return regNom.test(nombre) && regCorreo.test(email) && regTel.test(telefono)
+  return nombreValido && emailValido && telefonoValido
 }
 
 function limpiarError() {
