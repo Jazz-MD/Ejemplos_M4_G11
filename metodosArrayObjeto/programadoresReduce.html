@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>reduce</title>
+</head>
+<body>
+  
+  <script>
+    const experiencias = [
+      { titulo: "Practica", anios: 1 },
+      { titulo: "Programador Junior", anios: 2 },
+      { titulo: "Programador Senior", anios: 4 },
+      { titulo: "Jefe de proyecto", anios: 5 },
+    ]
+
+    let experienciaTotal = experiencias.reduce((acc, valorActual) => {
+      console.log("Nuevo ciclo")
+      console.log("acc", acc)
+      console.log("valor Actual", valorActual)
+      return acc + valorActual.anios;
+    }, 0)
+  </script>
+</body>
+</html>

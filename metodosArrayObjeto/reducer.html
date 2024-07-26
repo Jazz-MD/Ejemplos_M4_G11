@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    const numeros = [1000, 2500, 150, 3500]
+
+    const suma = numeros.reduce((acc, valorActual) => {
+      return acc + valorActual
+    } )
+
+    const personas = [
+      {nombre: "Carlos", edad: 17},
+      {nombre: "Juan", edad: 28},
+      {nombre: "Karla",edad: 27}
+    ]
+
+    const nombres = personas.reduce(function(acc, valorActual){
+      return acc + `${valorActual.nombre}, `;
+    }, "")
+  </script>
+</body>
+</html>

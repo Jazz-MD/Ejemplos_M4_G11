@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    let clientes = [
+      { nombre: 'Juan', edad: 28 },
+      { nombre: 'Carlos', edad: 17 },
+      { nombre: 'Karla', edad: 27 }
+    ]
+
+    let clientesConInfo = clientes.map(function(cliente) {
+      let clienteConDato = {
+        nombre: cliente.nombre,
+        edad: cliente.edad,
+        mayorEdad: cliente.edad >= 18
+      }
+
+      return clienteConDato
+    })
+
+    let clientesFlecha = clientes.map((cliente) => {
+      let clienteConDato = {
+        nombre: cliente.nombre,
+        edad: cliente.edad,
+        mayorEdad: cliente.edad >= 18
+      }
+
+      return clienteConDato
+    })
+  </script>
+</body>
+</html>

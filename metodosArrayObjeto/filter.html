@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter</title>
+</head>
+<body>
+  
+  <script>
+    let clientes = [
+      { nombre: 'Juan', edad: 28 },
+      { nombre: 'Carlos', edad: 17 },
+      { nombre: 'Karla', edad: 27 }
+    ]
+
+    // clientes mayor de edad
+    let mayorEdad = clientes.filter( (cliente) => {
+      return cliente.edad >= 18
+    })
+
+    const experiencias = [
+      { titulo: "Practica", anios: 1 },
+      { titulo: "Programador Junior", anios: 2 },
+      { titulo: "Programador Senior", anios: 4 },
+      { titulo: "Jefe de proyecto", anios: 5 },
+    ]
+
+    let experiementados = experiencias.filter((seniotiry) => {
+      return seniotiry.anios > 2
+    })
+  </script>
+</body>
+</html>
