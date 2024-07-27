@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    const autosCompactos = [
+      {marca: "Toyota", modelo: "Corola", combustible: "Gasolina"},
+      {marca: "Mazda", modelo: "3", combustible: "Gasolina"},
+      {marca: "Honda", modelo: "Civic", combustible: "Gasolina"},
+      {marca: "BMW", modelo: "116d", combustible: "Diesel"},
+    ]
+
+    const estaDelorean = autosCompactos.some((auto) => {
+      return auto.combustible == "Basura"
+    })
+
+    const petrolero = autosCompactos.some((auto) => {
+      return auto.combustible == "Diesel"
+    })
+
+    console.log(estaDelorean)
+    console.log(petrolero)
+
+  </script>
+</body>
+</html>

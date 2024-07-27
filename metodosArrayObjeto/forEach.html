@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let clientes = [
+      { nombre: 'Juan', edad: 28 },
+      { nombre: 'Carlos', edad: 17 },
+      { nombre: 'Karla', edad: 27 }
+    ]
+
+    clientes.forEach((cliente) => {
+      console.log(cliente)
+
+      cliente.mayorEdad = cliente.edad >= 18
+    })
+
+    // prueba Mutación forEach
+    let mascotas = [
+      "Llanka",
+      "Bobby",
+      "Felipe"
+    ]
+
+    mascotas.forEach((mascota) => {
+      console.log(mascota.toLocaleUpperCase())
+    })
+  </script>
+</body>
+</html>

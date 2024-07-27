@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let productos = [
+      { nombre: 'Coca Cola', precio: 990},
+      { nombre: 'Papas Fritas', precio: 590},
+      { nombre: 'Ramitas', precio: 290},
+      { nombre: 'Kapo', precio: 190}
+    ]
+
+    const indiceRamitas = productos.findIndex((producto) => {
+      return producto.nombre == "Ramitas"
+    })
+
+    console.log(productos)
+    console.log(indiceRamitas)
+  </script>
+</body>
+</html>

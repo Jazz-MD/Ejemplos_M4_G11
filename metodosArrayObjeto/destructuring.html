@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    const cursos = [
+      {nombre: 'JavaScript', descripcion: "Aplicaciones FS"},
+      {nombre: 'Python', descripcion: "Machine Learning"},
+      {nombre: 'Java', descripcion: "Sistemas"},
+      {nombre: 'Rust', descripcion: "OS"}
+    ]
+
+    // Del arreglo
+    let [primerCurso, segundoCurso, ...rest] = cursos
+
+    console.log(primerCurso)
+    console.log(segundoCurso)
+    console.log(rest)
+
+    let { nombre } = primerCurso
+    console.log(nombre)
+  </script>
+</body>
+</html>

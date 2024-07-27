@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    let productos = [
+      { nombre: 'Coca Cola', precio: 990},
+      { nombre: 'Papas Fritas', precio: 590},
+      { nombre: 'Ramitas', precio: 290},
+      { nombre: 'Kapo', precio: 190}
+    ]
+
+    // Buscar Kapo
+    const kapo = productos.find((produto) => {
+      return produto.nombre == "Kapo"
+    })
+
+    const sobre500 = productos.find((producto) => {
+      return producto.precio >= 700
+    })
+
+    console.log(productos)
+    console.log(kapo)
+    console.log(sobre500)
+  </script>
+</body>
+</html>
