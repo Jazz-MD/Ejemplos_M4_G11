@@ -4,8 +4,11 @@ Ejemplos del módulo introducción a JavaScript
 
 ## Script de bash
 
-El archivo `bashScript` funciona sólo en sistemas unix, o con la terminal
-git bash, no es adecuado para sistemas Windows
+El archivo `bashScript` suele funcionar mejor con sistemas Unix (linux/mac)
+que con sistemas windows.
+La finalidad de este archivo es que al momento de hacer un commit al repo
+Se cree un push de forma automática, así no se pierden las modificaciones
+del proyecto por mis pavadas 🦃
 
 Importante:
 
