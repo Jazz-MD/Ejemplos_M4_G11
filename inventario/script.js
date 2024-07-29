@@ -4,6 +4,7 @@ let productos = {
   "tags": ["Carpintería", "Hobbies", "Clavos", "Madera"]
 }
 
+console.log(productos)
 
 /**
  * Convierte producto "JSON" a HTML
