@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtros</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>Fila 1 dato 1</td>
+      <td>Fila 1 dato 2</td>
+      <td>Fila 1 dato 3</td>
+    </tr>
+    <tr>
+      <td>Fila 2 dato 4</td>
+      <td>Fila 2 dato 5</td>
+      <td>Fila 2 dato 6</td>
+    </tr>
+    <tr>
+      <td>Fila 3 dato 7</td>
+      <td>Fila 3 dato 8</td>
+      <td>Fila 3 dato 9</td>
+    </tr>
+  </table>
+
+  <script>
+    $(document).ready(function() {
+      // nuestro código
+      console.log($('td'))
+      $('td:gt(5)').css("backgroundColor", "blue") // mayor que
+      $('td:lt(3)').css("backgroundColor", "yellow") // menor que
+      $('td:first').css("backgroundColor", "red") // primero
+      $('td:eq(5)').css("backgroundColor", "red") // igual
+    })
+  </script>
+</body>
+</html>
