@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <h1>Haz click en el botón para aumentar contador</h1>
+  <button id="aumentar">Aumentar</button>
+
+  <p id="contador"></p>
+  
+  <script>
+    $(document).ready(function() {
+      let contador = 0
+      $("#aumentar").on("click", function() {
+        contador++
+
+        $("#contador").html(`<p>Contador: ${contador}</p>`)
+      })
+    })
+  </script>
+</body>
+</html>

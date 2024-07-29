@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <form action="#">
+    <select name="pais" id="pais">
+      <option value="argentina">Argentina</option>
+      <option value="chile">Chile</option>
+      <option value="brasil">Brasil</option>
+      <option value="venezuela">Venezuela</option>
+    </select>
+  </form>
+
+  <p class="resultado"></p>
+  
+  <script>
+    $(document).ready(function(){
+      // let seleccion = $("select > option:selected").val()
+      // console.log(seleccion)
+      // $("#pais").change(function() {})
+      $("#pais").on("change", function() {
+        
+        let seleccion = $(this).children("option:selected").val()
+
+        $('.resultado').text(seleccion)
+      })
+
+    })
+  </script>
+</body>
+</html>
