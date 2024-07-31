@@ -2,7 +2,7 @@ jQuery.fn.boton = function (){
   const settings = {
     "async": true,
     "crossDomain": true,
-    "url": "https://jsonplaceholder.typicode.com/users",
+    "url": "https://dummyjson.com/users",
     "method": "GET",
     "dataType": "json",
     "headers": {
